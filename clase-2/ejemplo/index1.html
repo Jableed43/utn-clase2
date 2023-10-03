@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1> Mi primer html </h1>
-    <h2> Es cool </h2>
-    <h3> Suavee </h3>
-    <a href="#section" id="menu">go to section</a>
 
-    <p> Hola! Mi nombre es Nehuen y me gusta la papa frita </p>
-    <p> Soy un p </p>
-    <a href="www.lanada.com">Soy un enlace a la nada</a>
-    <img src="./img/papas.jpg" alt="papas fritas">
-    <video src="../../Paso-a-Paso-1.mp4" controls="true" width="450px">Paso a paso</video>
-    <audio src="./perro.wav" controls="true" width="450px">perrooooooooooooooooooooooooo!</audio>
+    <div class="encabezados">
+      <h1> Mi primer html </h1>
+      <h2> Es cool </h2>
+      <h3> Suavee </h3>
+    </div>
 
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/1mj4qHJdqcw" title="bossa brazil 🌴 summer jazzy lofi mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="enlaces">
+      <a href="#section" id="menu">go to section</a>
+      <p> Hola! Mi nombre es Nehuen y me gusta la papa frita </p>
+    </div>
 
-    <form id="miFormulario">
+    <section class="img-section">
+
+    <div class="img-container">
+      <h1 class="img-title">Vivan las papitas</h1>
+      <img src="./img/papas.jpg" alt="papas fritas">
+    </div>
+
+    </section>
+
+    <div class="audio-video">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/1mj4qHJdqcw" title="bossa brazil 🌴 summer jazzy lofi mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <audio src="./perro.wav" controls="true" width="450px">perro!</audio>
+    </div>
+
+    <div class="form-container">
+      <form id="miFormulario">
         <label for="dato">Ingresa un dato:</label>
         <input type="text" id="dato" name="dato" placeholder="Escribe algo">
       
         <button type="submit">Enviar</button>
       </form>
-      
-      <script>
+    </div>
+
+
+    <ul class="lista">
+      <li>Rojo</li>
+      <li>Verde</li>
+      <li>Azul</li>
+      <li>Amarillo</li>
+      <li class="naranja" id="rosa">Naranja</li>
+      <li>Violeta</li>
+    </ul>
+
+    <script>
         document.getElementById('miFormulario').addEventListener('submit', function(event) {
           event.preventDefault();  // Evita que el formulario se envíe de forma convencional
       
