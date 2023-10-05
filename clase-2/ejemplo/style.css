@@ -1,26 +1,35 @@
+//estilos generales
 *{
     font-family: system-ui;
     font-style: italic;
     font-weight: 600;
 }
 
+@font-face{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+i{
+    font-size: 20px;
+}
+
 body{
     margin: 0;
-    background: url('./img/patron.jpg')
+    background: #23074d;
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  
+    background: linear-gradient(to right, #cc5333, #23074d); 
+
 }
 
 h1{
     margin: 0;
-}
-
-.encabezados {
-    color: blue;
-    text-align: center;
-    border: 2px black solid;
-}
-
-.encabezados h2{
-    font-size: 25px;
 }
 
 h3{
@@ -29,9 +38,59 @@ h3{
     background-color: orange;
 }
 
+iframe{
+    max-width: 80vw;
+}
+
+audio{
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+    width: 50%;
+    padding: 20px;
+    background: rgb(68 199 20 / 51%);
+    min-width: 80vw;
+}
+
+form input{
+    margin: 10px;
+}
+
+
+.test{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+//ENCABEZADOS
+
+.encabezados {
+    color: #ffffff;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.encabezados h2{
+    font-size: 25px;
+}
+
+//ENLACES
+
 .enlaces{
     text-align: center;
 }
+
+#menu{
+    color: yellow;
+}
+
+//imagen
 
 .img-section{
     display: flex;
@@ -54,9 +113,7 @@ h3{
     margin-bottom: 8px;
 }
 
-iframe{
-    max-width: 80vw;
-}
+//audio/video
 
 .audio-video {
     display: flex;
@@ -65,29 +122,11 @@ iframe{
     margin-top: 25px;
 }
 
-audio{
-    margin: 20px;
-}
-
 .form-container{
     display: flex;
     justify-content: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px black solid;
-    width: 50%;
-    padding: 20px;
-    background: rgb(68 199 20 / 51%);
-    min-width: 80vw;
-}
-
-form input{
-    margin: 10px;
-}
 
 .lista{
     background-color: gray;
@@ -110,4 +149,29 @@ form input{
 
 #rosa{
     background: pink;
+}
+
+.texto{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    padding: 0 30px;
+}
+
+span{
+    text-decoration: line-through;
+    color: yellow;
+}
+
+#distinto{
+    font-family: 'Pixelify Sans', cursive;
+    background-color: gray;
+}
+
+
+.relleno{
+    width: 500px;
+    border-top:solid 5px red;
+    border-right:solid 10px cyan;
+    border-bottom:solid 7px green;
+    border-left:solid 12px yellow;
 }
