@@ -1,0 +1,13 @@
+section{
+    display: grid;
+    grid-template-rows: 50%  50%;
+    grid-template-columns: 25%  25%  25%  25%;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+}
+
